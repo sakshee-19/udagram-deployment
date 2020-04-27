@@ -3,7 +3,7 @@ services:
     reverseproxy:
         image: sakshee19/reverseproxy
         ports: 
-            - 8000:8001
+            - 8000:8000
         restart: always
         depends_on: 
             - backend-user
