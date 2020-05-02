@@ -2,14 +2,14 @@ version: "3"
 services: 
     reverseproxy:
         image: sakshee19/reverseproxy
-        ports: 
-            - 8000:8000
+        ports:
+            - 8001:8001
         restart: always
         depends_on: 
             - backend-user
             - backend-feed
     backend-user:
-        image: sakshee19/udacity-user-service 
+        image: sakshee19/udacity-user-service
         volumes:
             - $HOME/.aws:/root/.aws
         environment: 
