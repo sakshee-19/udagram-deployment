@@ -6,15 +6,15 @@ services:
         image: sakshee19/reverseproxy:1.0.0
     backend_user:
         build:
-            context: ../user-service
+            context: ../user-service-udagram
         image: sakshee19/udacity-user-service:1.0.0
     backend_feed:
         build:
-            context: ../feed-service
+            context: ../feed-service-udagram
         image: sakshee19/udacity-feed-service:1.0.0
     frontend:
         build:
-            context: ../udacity-c2-frontend
+            context: ../Udagram-Client
         image: sakshee19/udacity-udagram-frontend:1.0.0
 
 
